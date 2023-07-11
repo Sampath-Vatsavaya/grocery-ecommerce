@@ -153,12 +153,43 @@ form #login-btn
   }
   
   /********** Extra small devices only **********/
-  @media (max-width: 767px) {
+  @media (min-width:480) and (max-width: 767px) {
 
     .login
     {
         width:50vw;
-        height: 70vw;
+        height: 90vw;
     }
+    .login ul
+
+    {   display: inline-block;
+    margin-left: 25%;
+    list-style: none;
+    align-items: center;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+
+    .login
+    {
+        width:50vw;
+        height: 150vw;
+       
+    }
+    .login ul
+
+    {   display: block;
+    margin-left: 25%;
+    list-style: none;
+    align-items: center;
+    }
+    .login ul li 
+{
+    display: block;
+    margin-left:20%;
+    
+}
 
   }

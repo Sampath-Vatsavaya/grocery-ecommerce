@@ -124,3 +124,83 @@ form #login-btn
     color: #302f2f;
     font-weight: 500;
 }
+
+
+/* 
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    .signup
+    {
+      width: 25vw;
+    }
+   }
+   
+   /********** Medium devices only **********/
+   @media (min-width: 992px) and (max-width: 1199px) {
+    
+    .signup
+     {
+         width: 30vw;
+         height: 40vw;;
+     }
+    
+   }
+   
+   /********** Small devices only **********/
+   @media (min-width: 768px) and (max-width: 991px) {
+    .signup
+     {
+         width:30vw;
+         height:60vw;
+     }
+   }
+   
+   /********** Extra small devices only **********/
+   @media (min-width:480) and (max-width: 767px) {
+ 
+    .signup
+     {
+         width:50vw;
+         height: 90vw;
+     }
+     .signup ul
+ 
+     {   display: inline-block;
+     margin-left: 25%;
+     list-style: none;
+     align-items: center;
+     }
+ 
+   }
+ 
+   @media (max-width: 480px) {
+ 
+     .signup
+     {
+         width:50vw;
+         height: 170vw;
+        
+     }
+     .signup ul
+ 
+     {   display: block;
+     margin-left: 25%;
+     list-style: none;
+     align-items: center;
+     }
+     .signup ul li 
+ {
+     display: block;
+     margin-left:20%;
+     margin-bottom: 0%;
+     
+ }
+ .signup .login p
+{   text-align: center;
+    font-size:12px;
+    color: #464545;
+    margin-bottom: 10px;
+    margin-top:-5%;
+}
+ 
+   }
