@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body
+{   height: 100vh;
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+}
+.signup
+{   place-items: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    height: 90vh;
+    width:25vw;
+
+}
+.signup h1
+{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+.signup form
+{
+    padding:0 30px;
+}
+form .user_input
+{
+    position: relative;
+    border-bottom: solid 0.5px rgb(204, 202, 202);
+    margin: 10px 0;
+}
+
+form .user_input label
+{
+    font-size: 12px;
+}
+.user_input input
+{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    background:none;
+    outline: none;
+    
+}
+form #login-btn
+{   border:none;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding:5px;
+    border-radius: 10px;
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+    color: white;
+    font-weight: 600;
+}
+.signup h3
+{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: -4%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+} 
+.signup ul
+
+{   display: inline-block;
+    margin-left: 25%;
+    list-style: none;
+    align-items: center;
+}
+.signup ul li 
+{
+    display: inline-block;
+    
+}
+.signup ul li img
+{  
+    display: inline-block;
+    height:30px;
+    width:30px;
+    margin:8px;
+}
+
+.signup .user_input .pass
+{
+    margin-bottom: 0;
+}
+.signup #forgot
+{
+    text-align: right;
+}
+.signup #forgot a 
+{
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 0;
+    color: grey;
+    text-align: right;
+}
+
+
+.signup .login
+{
+    margin-top: 20px;
+}
+.signup .login p
+{   text-align: center;
+    font-size:12px;
+    color: #464545;
+    margin-bottom: 3px;
+}
+.signup .login p a
+{   text-decoration: none;
+    color: #302f2f;
+    font-weight: 500;
+}

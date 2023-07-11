@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body
+{   height: 100vh;
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+}
+.login
+{   place-items: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    height: 75vh;
+    width:25vw;
+
+}
+.login h1
+{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+.login form
+{
+    padding:0 30px;
+}
+form .user_input
+{
+    position: relative;
+    border-bottom: solid 0.5px rgb(204, 202, 202);
+    margin: 10px 0;
+}
+
+form .user_input label
+{
+    font-size: 12px;
+}
+.user_input input
+{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    background:none;
+    outline: none;
+    
+}
+form #login-btn
+{   border:none;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding:5px;
+    border-radius: 10px;
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+    color: white;
+    font-weight: 600;
+}
+.login h3
+{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: -4%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+} 
+.login ul
+
+{   display: inline-block;
+    margin-left: 25%;
+    list-style: none;
+    align-items: center;
+}
+.login ul li 
+{
+    display: inline-block;
+    
+}
+.login ul li img
+{  
+    display: inline-block;
+    height:30px;
+    width:30px;
+    margin:8px;
+}
+.login .signup
+{
+    margin-top: 20px;
+}
+.login .signup p
+{   text-align: center;
+    font-size:12px;
+    color: #464545;
+    margin-bottom: 3px;
+}
+.login .signup p a
+{   text-decoration: none;
+    color: #302f2f;
+    font-weight: 500;
+}
+.login .user_input .pass
+{
+    margin-bottom: 0;
+}
+.login #forgot
+{
+    text-align: right;
+}
+.login #forgot a 
+{
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 0;
+    color: grey;
+    text-align: right;
+}
+
+/* 
+input#search{
+ background-image: url(bg.jpg);
+ background-repeat: no-repeat;
+ text-indent: 20px;
+}
+
+input#search:focus{
+ background-image:none;
+}*/
