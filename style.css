@@ -8,6 +8,7 @@ body
 {   height: 100vh;
     background: linear-gradient(-135deg,#c850c0,#4158d0);
 }
+
 .login
 {   place-items: center;
     background-color: white;
@@ -123,12 +124,41 @@ form #login-btn
 }
 
 /* 
-input#search{
- background-image: url(bg.jpg);
- background-repeat: no-repeat;
- text-indent: 20px;
-}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+   .login
+   {
+     width: 25vw;
+   }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+   
+    .login
+    {
+        width: 30vw;
+        height: 40vw;;
+    }
+   
+  }
+  
+  /********** Small devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .login
+    {
+        width:30vw;
+        height:60vw;
+    }
+  }
+  
+  /********** Extra small devices only **********/
+  @media (max-width: 767px) {
 
-input#search:focus{
- background-image:none;
-}*/
+    .login
+    {
+        width:50vw;
+        height: 70vw;
+    }
+
+  }
