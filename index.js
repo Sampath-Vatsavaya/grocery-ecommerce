@@ -1,13 +1,13 @@
-
-
-const firebaseApp = firebase.initializeApp({
+const firebaseConfig = {
   apiKey: "AIzaSyCKbSL2LsCWjM53hFJtSE0xYdVueeYymHY",
   authDomain: "login-signup-c07f4.firebaseapp.com",
   projectId: "login-signup-c07f4",
   storageBucket: "login-signup-c07f4.appspot.com",
   messagingSenderId: "227838637283",
   appId: "1:227838637283:web:4e56b78165172597b981d6"
-});
+};
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const auth = firebaseApp.auth();
 
@@ -15,11 +15,16 @@ const login = () =>
 {   console.log("Hello World")
     const email = document.getElementById('email').value
     const password = document.getElementById('password').value
-    if(email && password)
+    auth.signInWithEmailAndPassword(email,password)
+    .then((res)=>
     {
-      console.log(email,password)
-      
-    }
+      console.log(res.user)
+      window.location.href = "https://www.geeksforgeeks.org/";
+      alert("You Have Succesfully Logged In Up")
+    })
+    .catch((err)=>{
+      alert(err.message)
+    })
 
 }
 
@@ -37,8 +42,7 @@ const signup = () =>
       alert("You Have Succesfully Signed Up")
     })
     .catch((err)=>{
-      console.log(err.code)
-      console.log(err.message)
+      alert(err.message)
     })
 
 }
