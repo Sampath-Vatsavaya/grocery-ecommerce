@@ -12,18 +12,18 @@
         <form >
             <div class="user_input">
                 <label for="username">Username (Email ID)</label>
-                <input type="text" id="username" placeholder=" Enter your username" required>
+                <input type="email" name="username" id="email" placeholder=" Enter your username" required>
                 
             
 
             </div>
             <div class="user_input">
                 <label for="pass">Password</label>
-                <input type="password" name="pass" id="pass" placeholder="Enter your password" required>
+                <input type="password" name="pass" id="password" placeholder="Enter your password" required>
                 
             </div>
            <div id="forgot"> <a href="forgot.html">Forgot Password?</a></div>
-            <input type="submit" value="LOGIN" id="login-btn">
+            <button onclick="login()">LOGIN</button>
         </form>
         <h3> Or  Login  With </h3>
         <ul>
@@ -39,4 +39,8 @@
         </div>
     </div>
 </body>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="index.js"></script>
 </html>

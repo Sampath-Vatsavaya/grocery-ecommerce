@@ -52,7 +52,7 @@ form .user_input label
     outline: none;
     
 }
-form #login-btn
+form button
 {   border:none;
     width:100%;
     margin-top: 10px;
