@@ -19,8 +19,8 @@ const login = () =>
     .then((res)=>
     {
       console.log(res.user)
-      window.location.href = "https://www.geeksforgeeks.org/";
-      alert("You Have Succesfully Logged In Up")
+      window.location.href = "https://sampath-vatsavaya.github.io/grocery-ecommerce/login";
+      alert("You Have Succesfully Logged In ")
     })
     .catch((err)=>{
       alert(err.message)
@@ -39,7 +39,8 @@ const signup = () =>
     .then((res)=>
     {
       console.log(res.user)
-      alert("You Have Succesfully Signed Up")
+      window.location.href = "https://sampath-vatsavaya.github.io/grocery-ecommerce/login.html";
+      alert("You Have Succesfully Signed Up, Now Login to your account")
     })
     .catch((err)=>{
       alert(err.message)
